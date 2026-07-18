@@ -24,7 +24,7 @@ This project uses the [Olist Brazilian E-Commerce dataset](https://www.kaggle.co
 - [x] Ran initial business analysis (revenue, top categories, state-level trends)
 - [x] Set up project structure and version control
 - [x] Load data into PostgreSQL (Docker)
-- [ ] Build star schema (fact/dimension tables)
+- [x] Build star schema (fact/dimension tables)
 - [ ] Write reusable ETL script
 - [ ] Automate pipeline (cron → Airflow)
 - [ ] Build dashboard (Metabase)
@@ -49,3 +49,9 @@ This project uses the [Olist Brazilian E-Commerce dataset](https://www.kaggle.co
 ## Author
 
 Built by [Rohan Reddy](https://github.com/rohanreddy2601-dev) as a hands-on data engineering learning project.
+## Star Schema
+
+- **fact_order_items** — one row per item sold (order_id, product_id, customer_id, price, freight_value, purchase_date)
+- **dim_customers** — customer_id, city, state
+- **dim_products** — product_id, category, weight, dimensions
+- **dim_date** — full calendar table (year, month, day, weekday) for time-based analysis
