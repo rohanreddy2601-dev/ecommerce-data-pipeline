@@ -26,7 +26,7 @@ This project uses the [Olist Brazilian E-Commerce dataset](https://www.kaggle.co
 - [x] Load data into PostgreSQL (Docker)
 - [x] Build star schema (fact/dimension tables)
 - [ ] Write reusable ETL script
-- [ ] Automate pipeline (cron → Airflow)
+- [x] Automate pipeline (cron → Airflow)
 - [ ] Build dashboard (Metabase)
 
 ## Key Findings So Far
@@ -55,3 +55,6 @@ Built by [Rohan Reddy](https://github.com/rohanreddy2601-dev) as a hands-on data
 - **dim_customers** — customer_id, city, state
 - **dim_products** — product_id, category, weight, dimensions
 - **dim_date** — full calendar table (year, month, day, weekday) for time-based analysis
+## Automation
+
+The pipeline runs daily via Windows Task Scheduler, executing `scripts/etl.py` automatically at 6:00 AM. (Airflow was considered but scoped out for this iteration — noted as a future improvement below.)
