@@ -1,6 +1,6 @@
 # E-Commerce Data Pipeline
 
-An end-to-end data engineering project that ingests, cleans, models, and analyzes e-commerce order data — built as a hands-on learning project covering the full pipeline lifecycle from raw data to a queryable warehouse.
+End-to-end e-commerce data pipeline — Python, PostgreSQL, Docker, automated ETL, and Metabase dashboards
 
 ## Overview
 
@@ -58,6 +58,7 @@ Built by [Rohan Reddy](https://github.com/rohanreddy2601-dev) as a hands-on data
 ## Automation
 
 The pipeline runs daily via Windows Task Scheduler, executing `scripts/etl.py` automatically at 6:00 AM. (Airflow was considered but scoped out for this iteration — noted as a future improvement below.)
+ HEAD
 ## Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
@@ -68,3 +69,4 @@ The pipeline runs daily via Windows Task Scheduler, executing `scripts/etl.py` a
 - Automated the full pipeline to run daily with zero manual steps
 - Total revenue tracked: ~R$13.6M | Top category: bed/bath/table
 - São Paulo leads in order volume; Paraíba has the highest average order value
+ 3eafee51548a5dd0e45141481b648f1f6b514784
