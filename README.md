@@ -1,6 +1,6 @@
 # E-Commerce Data Pipeline
 
-An end-to-end data engineering project that ingests, cleans, models, and analyzes e-commerce order data — built as a hands-on learning project covering the full pipeline lifecycle from raw data to a queryable warehouse.
+End-to-end e-commerce data pipeline — Python, PostgreSQL, Docker, automated ETL, and Metabase dashboards
 
 ## Overview
 
