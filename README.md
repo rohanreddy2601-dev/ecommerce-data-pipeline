@@ -58,3 +58,13 @@ Built by [Rohan Reddy](https://github.com/rohanreddy2601-dev) as a hands-on data
 ## Automation
 
 The pipeline runs daily via Windows Task Scheduler, executing `scripts/etl.py` automatically at 6:00 AM. (Airflow was considered but scoped out for this iteration — noted as a future improvement below.)
+## Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+## Key Results
+
+- Analyzed 99,000+ orders across 4 relational datasets
+- Built a star schema (fact + 3 dimension tables) for analytics
+- Automated the full pipeline to run daily with zero manual steps
+- Total revenue tracked: ~R$13.6M | Top category: bed/bath/table
+- São Paulo leads in order volume; Paraíba has the highest average order value
